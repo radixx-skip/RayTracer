@@ -2,14 +2,14 @@
 //
 #include <iostream>
 
-#include "src\Camera.h"
+#include "Camera.h"
 
 int main()
 {
-	int I = 1280;
-	int J = 640;
+	int I = 480;
+	int J = 480;
 
-	Camera cam(I, J);
+	Camera cam(I, J, 200.0);
 	cam.render();
 	cam.display("Camera");
     return 0;

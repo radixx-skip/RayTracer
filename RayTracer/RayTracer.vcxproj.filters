@@ -8,18 +8,36 @@
     <Filter Include="src">
       <UniqueIdentifier>{259e19e2-6fb4-4dfd-835e-d77be4e1ace9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\objects">
+      <UniqueIdentifier>{749cc8af-5f3d-440e-ab7f-1b61ebc45353}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\Camera.cpp">
+    <ClCompile Include="Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Camera.h">
+    <ClInclude Include="Camera.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBase.h">
+      <Filter>src\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
