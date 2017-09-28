@@ -75,7 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Cimg;C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Eigen;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Cimg;C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Eigen;C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\json-develop\src;$(IncludePath)</IncludePath>
     <IntDir>$(Platform)\$(Configuration)\Intermediates\</IntDir>
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
@@ -84,7 +84,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Cimg;C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Eigen;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Cimg;C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\Eigen;C:\Users\schip\OneDrive\Documents\Development\C++\3rd party\json-develop\src;$(IncludePath)</IncludePath>
     <IntDir>$(Platform)\$(Configuration)\Intermediates\</IntDir>
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
@@ -158,14 +158,22 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ObjectSerializer.cpp" />
+    <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="ObjectHeaders.h" />
+    <ClInclude Include="ObjectSerializer.h" />
+    <ClInclude Include="Plane.h" />
     <ClInclude Include="World.h" />
     <ClInclude Include="ObjBase.h" />
     <ClInclude Include="Ray.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="objects.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

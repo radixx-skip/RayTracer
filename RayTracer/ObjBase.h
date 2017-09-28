@@ -6,11 +6,11 @@
 
 class ObjBase
 {
-	ObjBase() {}
 public:
+	ObjBase() {}
 	~ObjBase() {}
 
-	virtual double distance(const Ray& ray) = 0;
-	virtual Eigen::Vector3d intersect(const Ray& ray) = 0;
+	virtual double distance(const Ray& ray) const = 0;
+	virtual Eigen::Vector3d intersect(const Ray& ray) const = 0;
 };
 

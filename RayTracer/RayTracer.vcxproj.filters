@@ -26,6 +26,12 @@
     <ClCompile Include="World.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>src\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectSerializer.cpp">
+      <Filter>src\objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -40,5 +46,19 @@
     <ClInclude Include="World.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>src\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectHeaders.h">
+      <Filter>src\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectSerializer.h">
+      <Filter>src\objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="objects.json">
+      <Filter>src\objects</Filter>
+    </None>
   </ItemGroup>
 </Project>
