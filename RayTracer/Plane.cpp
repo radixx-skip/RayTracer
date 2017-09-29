@@ -1,7 +1,16 @@
 #include "Plane.h"
+#include "ObjectMaker.h"
+#include "JsonEigen.h"
+
+REGISTER_OBJECT(Plane)
 
 Plane::Plane(const Eigen::Vector3d& point, const Eigen::Vector3d& normal, const Eigen::Vector3d& colour)
 	: m_point(point), m_normal(normal.normalized()), m_colour(colour)
+{
+}
+
+Plane::Plane(const nlohmann::json& dict)
+	: m_point(json_array2eigen(dict["point"])), m_normal(json_array2eigen(dict["normal"]).normalized()), m_colour(json_array2eigen(dict["colour"]))
 {
 }
 

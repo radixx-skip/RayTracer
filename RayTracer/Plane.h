@@ -1,9 +1,10 @@
 #pragma once
 
+#include <json.hpp>
+
 #include "ObjBase.h"
 
-class Plane :
-	public ObjBase
+class Plane : public ObjBase
 {
 	Eigen::Vector3d m_point;
 	Eigen::Vector3d m_normal;
@@ -11,6 +12,7 @@ class Plane :
 
 public:
 	Plane(const Eigen::Vector3d& point, const Eigen::Vector3d& normal, const Eigen::Vector3d& colour);
+	Plane(const nlohmann::json& dict);
 	~Plane();
 
 	virtual double distance(const Ray& ray) const;

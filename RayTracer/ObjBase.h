@@ -1,7 +1,6 @@
 #pragma once
 
 #include <Eigen\Core>
-
 #include "Ray.h"
 
 class ObjBase

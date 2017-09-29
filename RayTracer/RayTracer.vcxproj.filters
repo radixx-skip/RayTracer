@@ -11,6 +11,9 @@
     <Filter Include="src\objects">
       <UniqueIdentifier>{749cc8af-5f3d-440e-ab7f-1b61ebc45353}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{2b8eef41-ab3d-48c5-ae49-6c910d7394a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -29,7 +32,7 @@
     <ClCompile Include="Plane.cpp">
       <Filter>src\objects</Filter>
     </ClCompile>
-    <ClCompile Include="ObjectSerializer.cpp">
+    <ClCompile Include="ObjectFactory.cpp">
       <Filter>src\objects</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,16 +52,17 @@
     <ClInclude Include="Plane.h">
       <Filter>src\objects</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectHeaders.h">
+    <ClInclude Include="JsonEigen.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
       <Filter>src\objects</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectSerializer.h">
+    <ClInclude Include="ObjectMaker.h">
       <Filter>src\objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="objects.json">
-      <Filter>src\objects</Filter>
-    </None>
+    <None Include="objects.json" />
   </ItemGroup>
 </Project>

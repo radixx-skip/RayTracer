@@ -158,15 +158,16 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ObjectSerializer.cpp" />
+    <ClCompile Include="ObjectFactory.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="ObjectHeaders.h" />
-    <ClInclude Include="ObjectSerializer.h" />
+    <ClInclude Include="JsonEigen.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="ObjectMaker.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="World.h" />
     <ClInclude Include="ObjBase.h" />

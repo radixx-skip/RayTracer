@@ -4,7 +4,6 @@
 
 #include "Camera.h"
 #include "World.h"
-#include "ObjectHeaders.h"
 
 int main()
 {

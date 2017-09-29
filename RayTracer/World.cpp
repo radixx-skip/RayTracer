@@ -1,5 +1,9 @@
 #include "World.h"
-#include "ObjectSerializer.h"
+#include "ObjectFactory.h"
+
+#include <json.hpp>
+#include <fstream>
+#include <string>
 
 World& World::instance()
 {
@@ -17,10 +21,14 @@ World::~World()
 
 void World::add(const char* file)
 {
-	std::vector<ObjBase*> obj_list = loadObjects(file);
-	for each (ObjBase* obj in obj_list)
+	std::ifstream f(file);
+	nlohmann::json j;
+	f >> j;
+
+	for (int i = 0; i < j.size(); i++)
 	{
-		add(obj);
+		nlohmann::json dict = j[i];
+		add(ObjectFactory::instance().make(dict));
 	}
 }
 
