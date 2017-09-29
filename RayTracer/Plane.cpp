@@ -36,5 +36,9 @@ double Plane::distance(const Ray& ray) const
 
 Eigen::Vector3d Plane::intersect(const Ray& ray) const
 {
-	return m_colour;
+	if (distance(ray) > 0.0) {
+		return m_colour;
+	}
+	
+	return Eigen::Vector3d::Zero();
 }

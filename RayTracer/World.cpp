@@ -54,5 +54,5 @@ Eigen::Vector3d World::trace(const Ray& ray)
 		}
 	}
 
-	return Eigen::Vector3d(0.0, 0.0, 0.0);
+	return Eigen::Vector3d::Zero();
 }

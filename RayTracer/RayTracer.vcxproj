@@ -161,6 +161,7 @@
     <ClCompile Include="ObjectFactory.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,7 @@
     <ClInclude Include="ObjectFactory.h" />
     <ClInclude Include="ObjectMaker.h" />
     <ClInclude Include="Plane.h" />
+    <ClInclude Include="Sphere.h" />
     <ClInclude Include="World.h" />
     <ClInclude Include="ObjBase.h" />
     <ClInclude Include="Ray.h" />
